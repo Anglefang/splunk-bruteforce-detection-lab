@@ -26,7 +26,7 @@ This incident was intentionally generated for training and portfolio purposes.
 
 ### Windows Event Logs
 
-- **EventCode**: 4625 — *An account failed to log on*
+- **EventCode**: 4625 (*An account failed to log on*)
 - **Status**: `0xC000006D` (Bad username/password)
 - **SubStatus**: `0xC0000064` or similar (invalid user) depending on case
 - **Caller Process Name**: `C:\Windows\System32\OpenSSH\sshd.exe`
