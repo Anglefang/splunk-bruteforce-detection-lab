@@ -37,9 +37,9 @@ These fields indicate repeated failed SSH authentication attempts against the sy
 
 ### SPL Query
 
-spl:
+```spl
 source="WinEventLog:Security" EventCode=4625 | stats count by host | where count > 10
-
+```
 ## 6. MITRE ATT&CK Mapping
 
 - T1110 – Brute Force
