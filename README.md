@@ -14,7 +14,7 @@ This lab simulates an SSH brute force attack against a Windows 10 host, collects
 
 Diagram (rough idea):
 
-Attacker (Kali) → SSH → Windows VM → Universal Forwarder → Splunk
+Attacker (Kali) -> SSH -> Windows VM -> Universal Forwarder -> Splunk
 
 ## Attack Simulation
 
