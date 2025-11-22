@@ -1,4 +1,4 @@
-## 1. Summary
+## 1. Overview
 
 A simulated SSH brute force attack was performed against a Windows 10 host in a lab environment. The attack generated approximately **30,000 failed logon attempts** over ~5 minutes. Windows Security logs (EventCode 4625) were forwarded to Splunk,
 where a detection query and alert were used to identify the abnormal authentication pattern.
@@ -31,7 +31,7 @@ This incident was intentionally generated for training and portfolio purposes.
 - **SubStatus**: `0xC0000064` or similar (invalid user) depending on case
 - **Caller Process Name**: `C:\Windows\System32\OpenSSH\sshd.exe`
 
-These fields indicate repeated failed SSH authentication attempts against the system.
+These fields indicate that there have been repeated failed SSH authentication attempts against the system.
 
 ## 5. Detection Logic
 
@@ -61,4 +61,4 @@ source="WinEventLog:Security" EventCode=4625 | stats count by host | where count
 - Implement MFA where possible
 - Monitor spikes in EventCode 4625
 - Add rate-limiting or IDS rules for repeated SSH failures
-- Disable SSH if not required
+- Disable SSH if not needed
